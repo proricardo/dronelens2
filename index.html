@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DroneLENS: filmagens aéreas com drones DJI para eventos, vistorias técnicas, imóveis e produções institucionais em toda a América do Sul."
+    />
+    <title>DroneLENS | Filmagens Aéreas Profissionais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      CABEÇALHO PRINCIPAL:
+      - Mantém navegação objetiva para reduzir atrito na jornada de conversão.
+      - Inclui alternador de tema (light/dark) com estado persistido em localStorage.
+    -->
+    <header class="site-header" id="topo">
+      <div class="container header-content">
+        <a class="brand" href="#topo" aria-label="DroneLENS - Início">
+          <img src="assets/logo-dronelens.svg" alt="Logo DroneLENS" class="brand-logo" />
+          <span class="brand-text">DroneLENS</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-label">Dark mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!--
+        HERO:
+        - Seção com copy clara e prova de valor imediata.
+        - Uso de imagem realista mais clara para alinhar ao pedido de visual menos escuro.
+      -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <img
+              src="assets/logo-dronelens.svg"
+              alt="Logo DroneLENS em destaque"
+              class="hero-logo"
+            />
+            <p class="eyebrow">+10 anos elevando a qualidade da sua imagem</p>
+            <h1>Filmagens aéreas com impacto cinematográfico e precisão técnica.</h1>
+            <p>
+              A <strong>DroneLENS</strong> é especialista em captações com drones DJI de última geração.
+              Atuamos em Curitiba - Paraná e com pilotos disponíveis em toda a América do Sul.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#contato">Solicitar proposta</a>
+              <a class="btn btn-ghost" href="#portfolio">Ver mini portfólio</a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Resumo de benefícios">
+            <h2>Por que escolher a DroneLENS?</h2>
+            <ul>
+              <li>Planejamento seguro e rotas otimizadas para cada operação.</li>
+              <li>Captação 4K/6K com alto nível de fidelidade visual.</li>
+              <li>Equipe experiente em projetos técnicos e criativos.</li>
+              <li>Entrega ágil e comunicação transparente do início ao fim.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!--
+        SERVIÇOS:
+        - Cards com linguagem acessível para múltiplos perfis de cliente.
+      -->
+      <section class="section" id="servicos">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Serviços versáteis</p>
+            <h2>Do diagnóstico técnico à narrativa de marca</h2>
+            <p>
+              Atendemos públicos variados com soluções sob medida para cada escopo de trabalho,
+              sempre com foco em qualidade, arrojo e valor de negócio.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Vistorias técnicas e inspeções</h3>
+              <p>
+                Mapeamento aéreo e registros detalhados para obras, estruturas e áreas de difícil
+                acesso com segurança operacional.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Mercado imobiliário</h3>
+              <p>
+                Vídeos e fotos aéreas para lançamentos, condomínios e imóveis de alto padrão,
+                destacando localização e diferenciais.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Eventos e esportes</h3>
+              <p>
+                Cobertura dinâmica para festivais, eventos corporativos e competições esportivas,
+                com ângulos que elevam a experiência do público.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Vídeos institucionais públicos e privados</h3>
+              <p>
+                Conteúdo institucional para órgãos públicos e empresas que desejam comunicar impacto,
+                transparência e inovação.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        PORTFÓLIO COM CARROSSEL:
+        - Estrutura horizontal com rolagem automática.
+        - JS duplica itens para criar efeito contínuo sem "saltos" perceptíveis.
+      -->
+      <section class="section section-portfolio" id="portfolio">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Mini portfólio</p>
+            <h2>Projetos que mostram dinamismo e tecnologia em ação</h2>
+          </div>
+
+          <div class="carousel-wrapper" data-carousel>
+            <div class="carousel-track">
+              <figure class="portfolio-item">
+                <img
+                  src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1400&q=80"
+                  alt="Drone sobrevoando área urbana iluminada"
+                />
+                <figcaption>Captação urbana para vídeos institucionais.</figcaption>
+              </figure>
+              <figure class="portfolio-item">
+                <img
+                  src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=1400&q=80"
+                  alt="Condomínio com vista aérea para lançamento imobiliário"
+                />
+                <figcaption>Apresentação aérea para lançamento imobiliário.</figcaption>
+              </figure>
+              <figure class="portfolio-item">
+                <img
+                  src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=1400&q=80"
+                  alt="Evento esportivo registrado por drone"
+                />
+                <figcaption>Cobertura aérea de evento esportivo.</figcaption>
+              </figure>
+              <figure class="portfolio-item">
+                <img
+                  src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1400&q=80"
+                  alt="Área industrial para vistoria técnica com drone"
+                />
+                <figcaption>Vistoria técnica com enquadramento preciso.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-sobre" id="sobre">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Quem somos</p>
+            <h2>Experiência sólida para elevar cada projeto</h2>
+            <p>
+              Há mais de uma década, a DroneLENS transforma objetivos em imagens de alta fidelidade.
+              Com base em Curitiba, entregamos operações ágeis e seguras em toda a América do Sul,
+              combinando tecnologia DJI, criatividade e rigor técnico.
+            </p>
+            <p>
+              Nosso compromisso é facilitar sua jornada: escutamos o desafio, estruturamos o plano e
+              entregamos conteúdo pronto para gerar resultado.
+            </p>
+          </div>
+          <img
+            class="about-image"
+            src="https://images.unsplash.com/photo-1524143986875-3b098d78b363?auto=format&fit=crop&w=1200&q=80"
+            alt="Equipe analisando imagens aéreas em notebook"
+          />
+        </div>
+      </section>
+
+      <!--
+        SEÇÃO DE CONTATO/LEAD:
+        - Formulário simples e direto para captação.
+        - Pode ser integrado facilmente a serviços de automação/form backend no futuro.
+      -->
+      <section class="section section-contact" id="contato">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Captação de leads</p>
+            <h2>Vamos planejar seu próximo voo?</h2>
+            <p>
+              Conte o objetivo do seu projeto e retornaremos com uma proposta personalizada.
+            </p>
+            <ul class="contact-points">
+              <li><strong>Base:</strong> Curitiba - PR</li>
+              <li><strong>Cobertura:</strong> América do Sul</li>
+              <li><strong>Equipamentos:</strong> drones DJI de alto desempenho</li>
+            </ul>
+          </div>
+
+          <form class="lead-form" aria-label="Formulário de contato" onsubmit="event.preventDefault(); alert('Obrigado! Recebemos sua mensagem e retornaremos em breve.');">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@empresa.com" required />
+
+            <label for="servico">Tipo de serviço</label>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione</option>
+              <option>Vistoria técnica</option>
+              <option>Filmagem de eventos</option>
+              <option>Vídeo institucional</option>
+              <option>Lançamento imobiliário</option>
+              <option>Outro</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente seu projeto"></textarea>
+
+            <button type="submit" class="btn btn-primary">Quero receber proposta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="brand brand-footer" href="#topo" aria-label="DroneLENS - Início">
+            <img src="assets/logo-dronelens.svg" alt="Logo DroneLENS minimalista" class="brand-logo small" />
+            <span class="brand-text">DroneLENS</span>
+          </a>
+          <p>Qualidade, arrojo e dinamismo em filmagens aéreas profissionais.</p>
+        </div>
+
+        <div class="social-links" aria-label="Redes sociais da DroneLENS">
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://vimeo.com" target="_blank" rel="noreferrer">Vimeo</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
