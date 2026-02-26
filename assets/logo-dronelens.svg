@@ -1,0 +1,16 @@
+<svg width="240" height="64" viewBox="0 0 240 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo DroneLENS">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#paint0_linear)"/>
+  <path d="M18 41L32 23L46 41" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="26" r="3" fill="white"/>
+  <path d="M71 40V24H79.5C83 24 85.5 26.2 85.5 29.4C85.5 32.7 83.1 35 79.5 35H75V40H71ZM75 31.8H79C80.7 31.8 81.8 30.8 81.8 29.4C81.8 28 80.7 27.1 79 27.1H75V31.8Z" fill="currentColor"/>
+  <path d="M89 40V24H93V36.7H101V40H89Z" fill="currentColor"/>
+  <path d="M104.5 40V24H118V27.2H108.4V30.3H116.8V33.4H108.4V36.8H118.1V40H104.5Z" fill="currentColor"/>
+  <path d="M121.2 40V24H124.7L132.8 34.1V24H136.7V40H133.2L125.1 29.9V40H121.2Z" fill="currentColor"/>
+  <path d="M140.4 40V36.8L149.2 27.2H140.6V24H154.4V27.2L145.6 36.8H154.6V40H140.4Z" fill="currentColor"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="2" y1="2" x2="62" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A73E8"/>
+      <stop offset="1" stop-color="#58B6FF"/>
+    </linearGradient>
+  </defs>
+</svg>
